@@ -1,22 +1,23 @@
 @font-face {
   font-family: "Roboto";
-  src: url(../../font/Roboto-Regular.ttf);
+  src: url("../../font/Roboto-Regular.ttf");
 }
 
 @font-face {
   font-family: "RobotoBold";
-  src: url(../../font/Roboto-Bold.ttf);
+  src: url("../../font/Roboto-Bold.ttf");
 }
 
 @font-face {
   font-family: "Shrikhand";
-  src: url(../../font/Shrikhand-Regular.ttf);
+  src: url("../../font/Shrikhand-Regular.ttf");
 }
 
 html, body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto';
+  font-family: "Roboto";
+  font-size: 1.125rem;
 }
 
 html .enseigne, body .enseigne {
@@ -24,11 +25,27 @@ html .enseigne, body .enseigne {
 }
 
 html ul, body ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  line-height: 1.5em;
 }
 
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+footer {
+  color: white;
+  background: #3b3b3b;
+  padding: 1.5em;
+}
+
+footer img {
+  height: 1em;
+  margin-bottom: 1em;
+  -webkit-filter: invert(100%) sepia(0%) saturate(7482%) hue-rotate(223deg) brightness(106%) contrast(106%);
+          filter: invert(100%) sepia(0%) saturate(7482%) hue-rotate(223deg) brightness(106%) contrast(106%);
 }
 /*# sourceMappingURL=style.css.map */
