@@ -1,5 +1,7 @@
+@import "../general/_couleurs.scss";
+
 footer{
-    color:white;background:rgb(59, 59, 59);padding:1.5em;
+    color:white;background:$bg-dark-grey;padding:1.5em;
     img{
         height:1em;margin-bottom:1em;
         filter: invert(100%) sepia(0%) saturate(7482%) hue-rotate(223deg) brightness(106%) contrast(106%);

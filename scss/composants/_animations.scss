@@ -1,0 +1,10 @@
+@import "../general/_couleurs.scss";
+
+@keyframes liquidfill{
+    from {
+        top:50px;transform:rotate(0deg);
+      }
+      to {
+        top:0;transform:rotate(360deg);
+      }
+}
