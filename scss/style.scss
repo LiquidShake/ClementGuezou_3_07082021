@@ -1,0 +1,15 @@
+// STYLE DES PAGES
+@import "pages/_accueil.scss";
+@import "pages/_menu.scss";
+
+// COMPOSANTS QU'ON RETROUVE PLUSIEURS FOIS
+@import "composants/_boutons.scss";
+@import "composants/_cards.scss";
+@import "composants/_animations.scss";
+
+// COMPOSANTS QU'ON RETROUVE SUR CHAQUES PAGES
+@import "general/_fonts.scss";
+@import "general/_couleurs.scss";
+@import "general/_global.scss";
+@import "general/_header.scss";
+@import "general/_footer.scss";
