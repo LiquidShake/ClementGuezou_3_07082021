@@ -1,0 +1,20 @@
+.localisation{
+    display:flex;justify-content:center;align-items:center;height:2.725em;
+    background-color:rgb(230, 230, 230);
+    .pin{
+        margin:0 0.725em 0 -2.5em;
+    }
+    .ville{
+        font-weight:600;
+    }
+}
+.explore{
+    display:flex;justify-content:center;align-items:center;flex-wrap:wrap;
+    text-align:center;background:rgb(241,241,241);padding-bottom:3em;
+    h1{
+        font-family:"RobotoBold";width:10em;margin:1.225em 0 0 0;
+    }
+    p{
+        font-size:1.125em;margin-top:0.5em;
+    }
+}

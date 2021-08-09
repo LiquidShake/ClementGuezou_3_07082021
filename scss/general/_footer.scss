@@ -4,4 +4,18 @@ footer{
         height:1em;margin-bottom:1em;
         filter: invert(100%) sepia(0%) saturate(7482%) hue-rotate(223deg) brightness(106%) contrast(106%);
     }
+    ul{
+        li{
+            &:nth-child(1){
+                .svg-inline--fa{
+                    margin-right:0.625em;
+                }
+            }
+            &:nth-child(2){
+                .svg-inline--fa{
+                    margin-right:0.175em;
+                }
+            }
+        }
+    }
 }

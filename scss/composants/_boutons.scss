@@ -1,0 +1,6 @@
+@import "../general/_couleurs.scss";
+
+.btn-gradient{
+    background:linear-gradient(170deg, $rose, $mauve);color:white;padding:1em;
+    border-radius:2em;box-shadow:3px 3px 10px rgb(155, 153, 153);
+}

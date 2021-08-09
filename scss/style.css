@@ -1,3 +1,62 @@
+.localisation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 2.725em;
+  background-color: #e6e6e6;
+}
+
+.localisation .pin {
+  margin: 0 0.725em 0 -2.5em;
+}
+
+.localisation .ville {
+  font-weight: 600;
+}
+
+.explore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  background: #f1f1f1;
+  padding-bottom: 3em;
+}
+
+.explore h1 {
+  font-family: "RobotoBold";
+  width: 10em;
+  margin: 1.225em 0 0 0;
+}
+
+.explore p {
+  font-size: 1.125em;
+  margin-top: 0.5em;
+}
+
+.btn-gradient {
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  color: white;
+  padding: 1em;
+  border-radius: 2em;
+  -webkit-box-shadow: 3px 3px 10px #9b9999;
+          box-shadow: 3px 3px 10px #9b9999;
+}
+
 @font-face {
   font-family: "Roboto";
   src: url("../../font/Roboto-Regular.ttf");
@@ -17,7 +76,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: "Roboto";
-  font-size: 1.125rem;
+  font-size: 1.075rem;
 }
 
 html .enseigne, body .enseigne {
@@ -31,9 +90,39 @@ html ul, body ul {
   line-height: 1.5em;
 }
 
+html a, body a {
+  text-decoration: none;
+  color: inherit;
+}
+
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 3em;
+  -webkit-box-shadow: 0px 3px 3px #b9b9b9;
+          box-shadow: 0px 3px 3px #b9b9b9;
+  position: relative;
+}
+
+header .previous-arrow {
+  position: absolute;
+  left: 1.5em;
+}
+
+header .logo {
+  margin-top: 0.525em;
 }
 
 footer {
@@ -47,5 +136,13 @@ footer img {
   margin-bottom: 1em;
   -webkit-filter: invert(100%) sepia(0%) saturate(7482%) hue-rotate(223deg) brightness(106%) contrast(106%);
           filter: invert(100%) sepia(0%) saturate(7482%) hue-rotate(223deg) brightness(106%) contrast(106%);
+}
+
+footer ul li:nth-child(1) .svg-inline--fa {
+  margin-right: 0.625em;
+}
+
+footer ul li:nth-child(2) .svg-inline--fa {
+  margin-right: 0.175em;
 }
 /*# sourceMappingURL=style.css.map */
