@@ -8,14 +8,6 @@
         top:-35px;transform:rotate(360deg);
       }
 }
-@keyframes slide-in{
-  from {
-      right:0;
-    }
-    to {
-      right:5em;
-    }
-}
 @keyframes appear-item{
   from{
     opacity:0;
