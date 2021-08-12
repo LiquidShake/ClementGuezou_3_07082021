@@ -540,17 +540,17 @@
 
 @font-face {
   font-family: "Roboto";
-  src: url("../../font/Roboto-Regular.ttf");
+  src: url("../font/Roboto-Regular.ttf");
 }
 
 @font-face {
   font-family: "RobotoBold";
-  src: url("../../font/Roboto-Bold.ttf");
+  src: url("../font/Roboto-Bold.ttf");
 }
 
 @font-face {
   font-family: "Shrikhand";
-  src: url("../../font/Shrikhand-Regular.ttf");
+  src: url("../font/Shrikhand-Regular.ttf");
 }
 
 html, body {
