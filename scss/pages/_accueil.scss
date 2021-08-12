@@ -70,25 +70,34 @@
                 }
             }
             .texte{
-                padding:0.5em;line-height:1.5em;position:relative;
+                padding:0.5em;line-height:1.5em;position:relative;overflow:hidden;
                 .nom-resto{
                     font-family:'RobotoBold';
-                }
-                .icon-like{
-                    position:absolute;font-size:2em;right:0.5em;top:0.5em;display:inline-block;
-                    overflow:hidden;z-index: 1;
-                    &::after{
-                        content:'';position:absolute;width:50px;height:50px;
-                        background:linear-gradient(170deg, $rose, $mauve);
-                        left:-10%;top:40px;border-radius:30%;z-index:-1;
-                    }
-                    &:hover{
-                        &::after{
-                            animation:liquidfill 2s ease-in forwards;
-                        }
-                    }
                 }
             }
         }
     }
 }
+@media (min-width: 1281px) {
+  
+    .explore{
+        flex-direction: column;
+    }
+    .fonctionnement{
+        margin:-4rem 5rem 0 5rem;
+        h1{
+            display: inline-block;position: relative;top:6rem;
+        }
+        ul{
+            display:flex;justify-content:center;
+        }
+    }
+    #restaurants{
+        padding:2rem 5rem 2rem 5rem;
+        .resto-cards{
+             display:grid;grid-template-columns: 1fr 1fr;grid-template-rows: 1fr 1fr;
+        }
+       
+    }
+  }
+  

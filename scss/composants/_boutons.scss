@@ -2,5 +2,34 @@
 
 .btn-gradient{
     background:linear-gradient(170deg, $rose, $mauve);color:white;padding:1em;
-    border-radius:2em;box-shadow:$shadow;
+    border-radius:2em;box-shadow:$shadow;transition:.3s;
+    &:hover{
+        background:linear-gradient(170deg, #ff91e0, #aa77e7);box-shadow:8px 8px 15px rgb(155, 153, 153)
+    }
+}
+.icon-like{
+    position:absolute;display:inline-block;right:1rem;top:1rem;font-size:2rem;
+    .stroke, .fill{
+        position:absolute;right:0.5rem; 
+    }
+    .stroke{
+        z-index: 2;
+    }
+    .fill{
+        z-index:0;
+        path{
+            fill:$rose;
+        }
+    }
+    &::before{
+        content:'';position:absolute;width:35px;height:35px;
+        background:white;right:.5rem;border-radius:30%;
+        z-index: 1;
+    }
+    &:hover{
+        cursor:pointer;
+        &::before{
+            animation:liquidfill 2s ease-in forwards;
+        }
+    }
 }
