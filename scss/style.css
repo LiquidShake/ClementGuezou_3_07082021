@@ -50,6 +50,48 @@
   }
 }
 
+@-webkit-keyframes loader {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+
+@keyframes loader {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+
+@-webkit-keyframes bouncer {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  from {
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+  }
+}
+
+@keyframes bouncer {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  from {
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+  }
+}
+
 .localisation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -265,6 +307,27 @@
     opacity: 1;
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+}
+
+@keyframes loader {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+
+@keyframes bouncer {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  from {
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
   }
 }
 
@@ -538,6 +601,27 @@
   }
 }
 
+@keyframes loader {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+
+@keyframes bouncer {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  from {
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+  }
+}
+
 @font-face {
   font-family: "Roboto";
   src: url("../font/Roboto-Regular.ttf");
@@ -665,5 +749,121 @@ footer ul li:nth-child(2) .svg-inline--fa {
     margin-top: -2rem;
     padding-left: 5rem;
   }
+}
+
+@keyframes liquidfill {
+  from {
+    top: 0;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    top: -35px;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes appear-item {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(60px);
+            transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes loader {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+
+@keyframes bouncer {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  from {
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+  }
+}
+
+.loader {
+  background: #cea6ff;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 3;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-animation: loader .5s forwards;
+          animation: loader .5s forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.loader .brand img {
+  height: 3rem;
+  margin-bottom: 2rem;
+}
+
+.loader .bouncer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 300px;
+  width: 300px;
+}
+
+.loader .bouncer div {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: bouncer 0.5s cubic-bezier(0.19, 0.57, 0.3, 0.98) infinite alternate;
+          animation: bouncer 0.5s cubic-bezier(0.19, 0.57, 0.3, 0.98) infinite alternate;
+}
+
+.loader .bouncer div:nth-child(1) {
+  background: #9356DC;
+  -webkit-animation-delay: .1s;
+          animation-delay: .1s;
+}
+
+.loader .bouncer div:nth-child(2) {
+  background: #FF79DA;
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+}
+
+.loader .bouncer div:nth-child(3) {
+  background: #99E2D0;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
 }
 /*# sourceMappingURL=style.css.map */
