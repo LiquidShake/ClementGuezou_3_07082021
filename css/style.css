@@ -288,7 +288,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1280px) {
   .fonctionnement ul {
     max-width: 70%;
     margin: auto;
@@ -775,7 +775,7 @@ footer ul li:nth-child(2) .svg-inline--fa {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1280px) {
   footer {
     display: -webkit-box;
     display: -ms-flexbox;
