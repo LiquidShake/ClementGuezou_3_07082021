@@ -99,5 +99,16 @@
         }
        
     }
-  }
-  
+}
+@media (min-width: 768px) {
+    .fonctionnement{
+        ul{
+            max-width:70%;margin:auto;
+        }
+    }
+    #restaurants{
+        .resto-cards{
+            place-items:center;
+        }
+    }
+}

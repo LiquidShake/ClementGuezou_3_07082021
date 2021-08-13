@@ -92,6 +92,13 @@
     }
     .menu{
         width:30%;margin:3rem auto 0 auto;position:relative;top:0;height:90%;
+    }
+}
+@media (min-width: 768px) {
+    .commander{
+        left:40% !important;
+    }
+    .menu{
         li:hover{
             .plat, .accompagnement{
                 width:inherit;

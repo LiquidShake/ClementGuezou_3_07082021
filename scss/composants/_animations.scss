@@ -23,7 +23,7 @@
     opacity:1;
   }
   to{
-    opacity:0;z-index: -10;
+    opacity:0;z-index: -10;animation-play-state: paused;
   }
 }
 @keyframes bouncer{

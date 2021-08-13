@@ -34,3 +34,26 @@ footer{
         }
     }    
 }
+@media (min-width: 768px) {
+    footer{
+        display:flex;justify-content:center;flex-direction:column;
+        ul{
+            display:grid;grid-template-columns: 1fr 1fr;grid-template-rows: 1fr 1fr;place-items:center;
+            grid-gap:1rem;
+            li{
+                &:nth-child(1){
+                    grid-column-start: 1;
+                }
+                &:nth-child(2){
+                    grid-column-start: 2;
+                }
+                &:nth-child(3){
+                    grid-column-start: 1;grid-row-start: 2;
+                }
+                &:nth-child(4){
+                    grid-column-start: 2;grid-row-start: 2;
+                }
+            }
+        }
+    }
+}
