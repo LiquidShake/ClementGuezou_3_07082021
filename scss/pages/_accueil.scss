@@ -75,6 +75,13 @@
                     font-family:'RobotoBold';
                 }
             }
+            &:nth-child(1), &:nth-child(2){
+                &::before{
+                    content:'Nouveau';position:absolute;padding:.35rem;
+                    background:$mint;right:20px;top:20px;color:#008362;text-align:center;
+
+                }
+            }
         }
     }
 }
