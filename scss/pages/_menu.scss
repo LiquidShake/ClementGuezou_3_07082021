@@ -81,17 +81,18 @@
     }
 }
 @media (min-width: 1280px) {
+    body{
+        background:$bg-grey;
+    }
     .image{
-        position:absolute;height:95.2%;width:100%;
+        position:relative;height:500px;width:100%;
         img{
             height:100%;object-fit:cover;
         } 
     }
-    .note{
-       // height:103.85vh;
-    }
     .menu{
-        width:30%;margin:3rem auto 0 auto;position:relative;top:0;height:90%;
+        width:30%;margin:1rem auto 0 auto;position:relative;top:0;height:90%;
+        box-shadow:8px 0 8px -5px rgb(199, 199, 199);
     }
 }
 @media (min-width: 768px) {

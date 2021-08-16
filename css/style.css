@@ -252,6 +252,17 @@
   font-family: 'RobotoBold';
 }
 
+#restaurants .resto-cards .resto-card:nth-child(1)::before, #restaurants .resto-cards .resto-card:nth-child(2)::before {
+  content: 'Nouveau';
+  position: absolute;
+  padding: .35rem;
+  background: #99e2d0;
+  right: 20px;
+  top: 20px;
+  color: #008362;
+  text-align: center;
+}
+
 @media (min-width: 1281px) {
   .explore {
     -webkit-box-orient: vertical;
@@ -427,7 +438,7 @@
 
 .menu li .prix::before {
   content: '';
-  background: #99E2D0;
+  background: #99e2d0;
   width: 5.08rem;
   height: 4.4rem;
   position: absolute;
@@ -505,9 +516,12 @@
 }
 
 @media (min-width: 1280px) {
+  body {
+    background: #e6e6e6;
+  }
   .image {
-    position: absolute;
-    height: 95.2%;
+    position: relative;
+    height: 500px;
     width: 100%;
   }
   .image img {
@@ -517,10 +531,12 @@
   }
   .menu {
     width: 30%;
-    margin: 3rem auto 0 auto;
+    margin: 1rem auto 0 auto;
     position: relative;
     top: 0;
     height: 90%;
+    -webkit-box-shadow: 8px 0 8px -5px #c7c7c7;
+            box-shadow: 8px 0 8px -5px #c7c7c7;
   }
 }
 
@@ -694,7 +710,7 @@ html h2::before, body h2::before {
   content: '';
   width: 3rem;
   height: .175rem;
-  background: #99E2D0;
+  background: #99e2d0;
   bottom: -.425rem;
 }
 
@@ -717,6 +733,7 @@ header {
   -webkit-box-shadow: 0px 3px 3px #b9b9b9;
           box-shadow: 0px 3px 3px #b9b9b9;
   position: relative;
+  background: white;
 }
 
 header .previous-arrow {
@@ -931,7 +948,7 @@ footer ul li:nth-child(2) .svg-inline--fa {
 }
 
 .loader .bouncer div:nth-child(3) {
-  background: #99E2D0;
+  background: #99e2d0;
   -webkit-animation-delay: .3s;
           animation-delay: .3s;
 }
