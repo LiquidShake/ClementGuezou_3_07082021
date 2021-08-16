@@ -1,8 +1,7 @@
 @import "../general/_couleurs.scss";
 
 .btn-gradient{
-    background:linear-gradient(170deg, $rose, $mauve);color:white;padding:1em;
-    border-radius:2em;box-shadow:$shadow;transition:.3s;
+    background:linear-gradient(170deg, $rose, $mauve);color:white;padding:1em;border-radius:2em;box-shadow:$shadow;transition:.3s;
     &:hover{
         background:linear-gradient(170deg, #ff91e0, #aa77e7);box-shadow:8px 8px 15px rgb(155, 153, 153)
     }

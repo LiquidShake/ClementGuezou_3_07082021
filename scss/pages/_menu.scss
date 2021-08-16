@@ -80,15 +80,15 @@
         position:absolute;bottom:2rem;left:35%;
     }
 }
-@media (min-width: 1281px) {
+@media (min-width: 1280px) {
     .image{
-        position:absolute;height:97.5%;
+        position:absolute;height:95.2%;width:100%;
         img{
             height:100%;object-fit:cover;
         } 
     }
     .note{
-        height:104vh;
+       // height:103.85vh;
     }
     .menu{
         width:30%;margin:3rem auto 0 auto;position:relative;top:0;height:90%;
